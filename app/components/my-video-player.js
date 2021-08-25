@@ -20,11 +20,11 @@ export default class MyVideoPlayerComponent extends Component {
       });
       // eslint-disable-next-line ember/no-legacy-test-waiters
       registerWaiter(() => {
-        console.log(
-          'Evaluating test waiter',
-          new Date().toLocaleTimeString(),
-          new Date() % 1000
-        );
+        // console.log(
+        //   'Evaluating test waiter',
+        //   new Date().toLocaleTimeString(),
+        //   new Date() % 1000
+        // );
         return !this.videoIsLoading;
       });
     }
